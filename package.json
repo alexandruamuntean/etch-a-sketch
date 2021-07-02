@@ -1,0 +1,32 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "a simple etch-a-sketch app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandruamuntean/etch-a-sketch.git"
+  },
+  "author": "Alex Muntean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandruamuntean/etch-a-sketch/issues"
+  },
+  "homepage": "https://github.com/alexandruamuntean/etch-a-sketch#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.2",
+    "gulp": "^4.0.2",
+    "node-sass": "^6.0.1"
+  }
+}

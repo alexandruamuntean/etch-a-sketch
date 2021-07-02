@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.u-mb-l {
+  margin-bottom: 3rem; }
+
+.u-mb-s {
+  margin-bottom: 1rem; }
+
+.u-mb-s {
+  margin-bottom: 0rem; }
+
+.u-mr-s {
+  margin-right: 1rem; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #1a1a1a; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  color: #1a1a1a;
+  margin: 0;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0rem 6rem;
+  min-height: 100vh; }
+
+.header {
+  max-width: 60rem;
+  margin-bottom: 3rem;
+  text-align: center; }
+
+.primary {
+  display: flex;
+  justify-content: center; }
+
+.secondary {
+  display: flex;
+  align-items: start;
+  justify-content: space-between; }
+
+body > * {
+  font-family: "Montserrat", sans-serif; }
+
+.h1 {
+  font-size: 4rem;
+  font-family: "Merriweather", serif; }
+
+.h3 {
+  font-size: 2rem;
+  font-family: "Merriweather", serif; }
+
+p {
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif; }
+
+.user-input {
+  font-size: 1.7rem; }
+
+button {
+  font-family: "Montserrat", sans-serif; }
+
+.sketch-pad {
+  border: 2px solid #1a1a1a;
+  width: 50rem;
+  height: 50rem;
+  overflow: hidden; }
+
+.row {
+  display: flex; }
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start; }
+
+#square-size {
+  width: 100%; }
+
+.btn {
+  font-size: 1.7rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: none;
+  border: 1px solid #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.2s ease; }
+  .btn:hover, .btn:active {
+    background-color: #1a1a1a;
+    color: white; }

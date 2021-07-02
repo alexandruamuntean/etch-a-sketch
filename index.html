@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketch-o-matic</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class='header '>
+      <h1 class='h1'>Sketch-o-matic</h1>
+      <h3 class='h3 u-mb-l'>A very small and useless toy.</h3>
+      <p>Simply drag the cursor over the square canvas and let your inner artistry flow. Choose from
+        various colors and shades to create your masterpiece.</p>
+    </header>
+    <main class='main container'>
+      <div class='user-input u-mb-l'>
+        <label for="square-size">Density</label>
+        <input type="range" id="square-size" name='square-size' min='16' max='100' step='1' value='16'>
+        <output class="square-density" for='square-size'></output>
+      </div>
+      <div class="secondary col-4 u-mb-l">
+        <div>
+          <button data-action='reset' class='btn'>Clear</button>
+        </div>
+        <div>
+          <button data-action='eraser' class='btn'>Eraser</button>
+        </div>
+        <div>
+          <button data-action='default' class='btn'>Default</button>
+        </div>
+        <div>
+          <button data-action='randomize' class='btn'>Rainbow</button>
+        </div>
+      </div>
+
+      <div class="primary">
+        <div class="sketch-pad">
+        </div>
+      </div>
+    </main>
+
+  </div>
+  </main>
+  </div>
+  <script src='script/index.js'></script>
+</body>
+
+</html>
